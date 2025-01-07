@@ -1,0 +1,93 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container styling */
+.container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styling */
+h1 {
+    background-color: #ffb6c1;
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+h4 {
+    text-align: center;
+    margin-top: 10px;
+}
+
+ul {
+    padding: 15px;
+    line-height: 1.6;
+}
+
+/* Table styling */
+.table-container {
+    margin: 20px 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+td {
+    padding: 15px;
+    text-align: center;
+    background-color: tomato;
+    color: white;
+    font-weight: bold;
+    border: 1px solid #ddd;
+}
+
+/* Buttons styling */
+input[type="button"] {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 20px;
+    border: none;
+    transition: 0.3s ease;
+}
+
+/* Highlight active button */
+.active {
+    background-color: yellow !important;
+    color: black !important;
+    border: 2px solid #000 !important;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #007bff;
+    color: white;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+footer a {
+    color: yellow;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Your Number Game</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Find Your Number</h1>
+        <h4>Select Any Number from 1 to 15</h4>
+        <ul>
+            <li>I displayed 4 Tables with numbers.</li>
+            <li>Click <strong>Yes</strong> if your number is in the table, else click <strong>No</strong>.</li>
+            <li>Finally, click <strong>Check</strong> to find your number!</li>
+        </ul>
+        <input type="hidden" id="result">
+
+        <!-- Table 1 -->
+        <div class="table-container">
+            <table border="1">
+                <tr>
+                    <td>13</td><td>12</td><td>15</td><td>11</td>
+                    <td>7</td><td>5</td><td>1</td><td>6</td>
+                </tr>
+            </table>
+            <div class="btn-group">
+                <input type="button" value="No" onclick="fun('0'); highlightButton(this)">
+                <input type="button" value="Yes" onclick="fun('1'); highlightButton(this)">
+            </div>
+        </div>
+
+        <!-- Table 2 -->
+        <div class="table-container">
+            <table border="1">
+                <tr>
+                    <td>15</td><td>12</td><td>14</td><td>11</td>
+                    <td>9</td><td>5</td><td>8</td><td>2</td>
+                </tr>
+            </table>
+            <div class="btn-group">
+                <input type="button" value="No" onclick="fun('0'); highlightButton(this)">
+                <input type="button" value="Yes" onclick="fun('1'); highlightButton(this)">
+            </div>
+        </div>
+
+        <!-- Table 3 -->
+        <div class="table-container">
+            <table border="1">
+                <tr>
+                    <td>9</td><td>15</td><td>4</td><td>14</td>
+                    <td>13</td><td>12</td><td>10</td><td>6</td>
+                </tr>
+            </table>
+            <div class="btn-group">
+                <input type="button" value="No" onclick="fun('0'); highlightButton(this)">
+                <input type="button" value="Yes" onclick="fun('1'); highlightButton(this)">
+            </div>
+        </div>
+
+        <!-- Table 4 -->
+        <div class="table-container">
+            <table border="1">
+                <tr>
+                    <td>8</td><td>15</td><td>3</td><td>14</td>
+                    <td>13</td><td>11</td><td>10</td><td>7</td>
+                </tr>
+            </table>
+            <div class="btn-group">
+                <input type="button" value="No" onclick="fun('0'); highlightButton(this)">
+                <input type="button" value="Yes" onclick="fun('1'); highlightButton(this)">
+            </div>
+        </div>
+
+        <!-- Buttons -->
+        <div class="action-btns">
+            <input type="button" value="CHECK" onclick="check()">
+            <input type="button" value="Restart" onclick="clr()">
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>Developed by <a href="https://www.linkedin.com/in/sainath666" target="_blank">Sainath</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
