@@ -3,17 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Find Your Number - A fun guessing game where the computer guesses your number">
     <title>Find Your Number Game</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
     <div class="container">
-        <h1>Find Your Number</h1>
+        <h1><i class="fas fa-search"></i> Find Your Number</h1>
         <h4>Select Any Number from 1 to 15</h4>
         <ul>
-            <li>I displayed 4 Tables with numbers.</li>
-            <li>Click <strong>Yes</strong> if your number is in the table, else click <strong>No</strong>.</li>
-            <li>Finally, click <strong>Check</strong> to find your number!</li>
+            <li><i class="fas fa-table"></i> I displayed 4 Tables with numbers.</li>
+            <li><i class="fas fa-hand-pointer"></i> Click <strong>Yes</strong> if your number is in the table, else click <strong>No</strong>.</li>
+            <li><i class="fas fa-check-circle"></i> Finally, click <strong>Check</strong> to find your number!</li>
         </ul>
         <input type="hidden" id="result">
 
@@ -78,13 +86,22 @@
             <input type="button" value="CHECK" onclick="check()">
             <input type="button" value="Restart" onclick="clr()">
         </div>
+        
+        <!-- Result Display -->
+        <div id="result-display" class="result-display">
+            <div class="result-content">
+                <i class="fas fa-lightbulb result-icon"></i>
+                <p id="result-text"></p>
+                <button onclick="closeResult()">OK</button>
+            </div>
+        </div>
     </div>
 
     <!-- Footer Section -->
     <footer>
-        <p>Developed by 
-            <a href="https://www.linkedin.com/in/sainath666" target="_blank" rel="noopener">Sainathreddy</a> | 
-            <a href="https://github.com/sainath-666" target="_blank" rel="noopener">GitHub</a></p>
+        <p>Developed with <i class="fas fa-heart"></i> by 
+            <a href="https://www.linkedin.com/in/sainath666" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i> Sainathreddy</a> | 
+            <a href="https://github.com/sainath-666" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a></p>
     </footer>
 
     <script src="script.js"></script>
